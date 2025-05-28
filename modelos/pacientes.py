@@ -8,3 +8,7 @@ class Paciente:
 
     def __repr__(self):
         return f"Paciente(nombre='{self.nombre}', motivo_consulta='{self.motivo_consulta}')"
+
+    def añadir_paciente_lista_espera(lista_espera: list, nombre: str, motivo_consulta: str):
+        nuevo_paciente = Paciente(nombre, motivo_consulta)
+        lista_espera.append(nuevo_paciente)
